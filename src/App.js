@@ -7,7 +7,7 @@ function App() {
 
   useLayoutEffect(() => {
     inputRef.current.focus();
-  }, [])
+  }, [inputRef])
 
   function valueChanged(event) {
     setMessage(event.currentTarget.value);

@@ -9,10 +9,6 @@ function App() {
     inputRef.current.focus();
   }, [inputRef])
 
-  function valueChanged(event) {
-    setMessage(event.currentTarget.value);
-  }
-
   function commitThought(event) {
     if (event.key === 'Enter') {
       setThought(message);
